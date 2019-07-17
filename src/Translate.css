@@ -1,0 +1,26 @@
+body {
+    background-color: #aa9;
+}
+
+.button {
+    background-color: #7788AA;
+    border-radius: 10%;
+    width: 100px;
+    border: 1px solid #7788AA;
+    height: 30px;
+}
+
+.translatedText {
+    width: 95%;
+    height: 200px;
+    background-color: #fff6aa;
+}
+
+#toTranslate {
+    width: 95%;
+    height: 200px;
+}
+
+.Translate {
+    margin: 20px 40px;
+}

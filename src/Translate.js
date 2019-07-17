@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import logo from './logo.svg';
+// import ReactDOM from 'react-dom';
+// import logo from './logo.svg';
 import './Translate.css';
 const axios = require('axios');
 
@@ -28,12 +28,13 @@ const axios = require('axios');
       return (
         <div className="Translate">
           <header className="App-header">
-            <p>
-              This is the tranlator
-            </p>
-            <textarea id="toTranslate" defaultValue={this.state.text}  onChange={this.handleChange}></textarea>
-            <input type="button" value="text" onClick={this.handleSubmit} />  
-            <p>{this.state.translatedText}</p>        
+            <h3>Please enter text to translate.</h3>
+            <textarea id="toTranslate" defaultValue={this.state.text}  onChange={this.handleChange} ></textarea>
+            <div>
+              <input type="button" className="button" value="Translate" onClick={this.handleSubmit} />  
+            </div>
+            <p>Translation</p>
+            <p className="translatedText">{this.state.translatedText}</p>        
           </header>
         </div>
       )
